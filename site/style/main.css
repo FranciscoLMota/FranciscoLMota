@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Satoshi;
+    src: url(../public/fonts/Satoshi-Variable.ttf);
+}
+
+html {
+    cursor: url(../public/cursor/cursor.cur), auto;
+}
+
+body {
+    background-color: #353839;
+
+}
+
+.container {
+    margin: auto;
+    height: max-content;
+    width: max-content;
+}
+
+.main-text {
+    color: white;
+    font-family: 'Satoshi';
+    font-size: 5rem;
+}
+
+
+.main-text:hover {
+    color: #353839;
+    background-color: yellow;
+    padding-left: 25px;
+    padding-right: 25px;
+}

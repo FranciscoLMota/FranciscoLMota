@@ -1,4 +1,10 @@
-## Hi there 👋
+## Hi there 👋 I'm Francisco Mota
+
+A developer located in Sault Ste Marie, ON in Canada!  
+
+## Check out my [Website](http://franciscolmota.com)
+
+### Also you can check my [Pomodoro Clock](http://pomo.franciscolmota.com) 
 
 <!--
 **FranciscoLMota/FranciscoLMota** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
