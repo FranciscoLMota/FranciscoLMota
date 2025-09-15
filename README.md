@@ -2,9 +2,9 @@
 
 A developer located in Sault Ste Marie, ON in Canada!  
 
-## Check out my [Website](http://franciscolmota.com)
+## Check out my [Website](https://franciscolmota.com)
 
-### Also you can check my [Pomodoro Clock](http://pomo.franciscolmota.com) 
+### Also you can check my [Pomodoro Clock](https://pomo.franciscolmota.com) 
 
 
 <!--
