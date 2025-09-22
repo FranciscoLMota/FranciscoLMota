@@ -5,29 +5,41 @@
 
 html {
     cursor: url(../public/cursor/cursor.cur), auto;
+     margin-left: 5%;
+    margin-right: 5%;
 }
 
 body {
     background-color: #353839;
+     font-family: 'Satoshi';
+      color: white;
+   
 
 }
 
-.container {
+.width-wrap {
     margin: auto;
     height: max-content;
-    width: max-content;
+    width: 100%
 }
 
-.main-text {
-    color: white;
-    font-family: 'Satoshi';
-    font-size: 5rem;
-}
-
-
-.main-text:hover {
+h1:hover, h2:hover, h3:hover {
     color: #353839;
     background-color: yellow;
-    padding-left: 25px;
-    padding-right: 25px;
+}
+
+a {
+    color: white;
+}
+
+.author, dt { 
+    color: yellow;
+}
+
+.menu {
+    padding-left: 0;
+}
+.nav {
+  display: inline-block; /* or display: inline; */
+  margin-right: 10px; /* Optional: adds space between items */
 }
