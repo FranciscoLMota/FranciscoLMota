@@ -5,16 +5,37 @@
 
 html {
     cursor: url(../public/cursor/cursor.cur), auto;
-     margin-left: 5%;
+    margin-left: 5%;
     margin-right: 5%;
 }
 
 body {
     background-color: #353839;
-     font-family: 'Satoshi';
-      color: white;
-   
+    font-family: 'Satoshi';
+    color: white;
+}
 
+input, textarea, select {
+    background-color: #353839;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    min-width: 50%;
+}
+
+th,
+td {
+    border: 1px solid white;
+}
+
+tr:nth-child(even) {
+    background-color: #252525;
 }
 
 .width-wrap {
@@ -23,7 +44,9 @@ body {
     width: 100%
 }
 
-h1:hover, h2:hover, h3:hover {
+h1:hover,
+h2:hover,
+h3:hover {
     color: #353839;
     background-color: yellow;
 }
@@ -32,14 +55,16 @@ a {
     color: white;
 }
 
-.author, dt { 
+.author,
+dt {
     color: yellow;
 }
 
 .menu {
     padding-left: 0;
 }
+
 .nav {
-  display: inline-block; /* or display: inline; */
-  margin-right: 10px; /* Optional: adds space between items */
+    display: inline-block;
+    margin-right: 10px;
 }
