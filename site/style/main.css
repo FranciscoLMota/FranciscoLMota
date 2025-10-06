@@ -10,12 +10,14 @@ html {
 }
 
 body {
-    background-color: #353839;
+    background-color: #1f2122;
     font-family: 'Satoshi';
     color: white;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
     background-color: #353839;
     color: white;
     border: 1px solid white;
@@ -39,9 +41,35 @@ tr:nth-child(even) {
 }
 
 .width-wrap {
+    background-color: #353839;
     margin: auto;
     height: max-content;
-    width: 100%
+    width: 100%;
+    max-width: 960px;
+    padding: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+    margin-bottom: 3em;
+}
+
+hr {
+    width: 50%;
+    min-width: 300px;
+    max-width: 890px;
+    border: none;
+    border-bottom: 3px dotted yellow;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+dt::after {
+    content: ":";
+}
+
+h1,
+h2,
+h3 {
+    color: white;
 }
 
 h1:hover,
@@ -67,4 +95,86 @@ dt {
 .nav {
     display: inline-block;
     margin-right: 10px;
+}
+
+nav {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #62BEC1
+}
+
+header {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+header nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* optional: removes bullets */
+}
+
+header nav li {
+    display: inline;
+}
+
+header nav a {
+    display: inline-block;
+    border-top: 4px solid transparent;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin: 0 1em;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.3s;
+}
+
+header nav a:hover {
+    border-top-color: yellow;
+    /* choose your color */
+}
+
+::selection {
+    color: #353839;
+    background-color: yellow;
+}
+
+label {
+    display: block;
+    padding: 0.5em;
+}
+
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    display: inline;
+    
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 1em 3em;
+    background-color: yellow;
+    color: #353839;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #005fa3;
+    color: white;
+}
+
+input:invalid,
+textarea:invalid,
+select:invalid {
+    background-color: #ffe6e6;
 }
