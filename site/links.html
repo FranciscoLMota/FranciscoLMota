@@ -20,6 +20,22 @@
         href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap"
         rel="stylesheet">
     <title>Francisco's Web Page</title>
+
+    <style>
+        .links {
+            padding: 0px;
+        }
+
+        .links li {
+            padding-left: 1em;
+            background-image: url("public/img/link.png");
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 10px 10px;
+            list-style-type: none;
+
+        }
+    </style>
 </head>
 
 <body>
@@ -31,12 +47,13 @@
                     <li class="nav"><a href="links.html">Links</a></li>
                     <li class="nav"><a href="glossary.html">Glossary</a></li>
                     <li class="nav"><a href="survey.html">Survey</a></li>
+                    <li class="nav"><a href="lorem.html">Lorem</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <h1>Useful Links</h1>
-            <ul>
+            <ul class="links">
                 <li><a href="https://validator.w3.org/nu/" target="_blank" rel="noopener noreferrer"
                         title="Html Validator by w3schools">HTML Validator</a>
                 </li>
