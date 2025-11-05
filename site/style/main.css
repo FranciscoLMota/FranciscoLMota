@@ -26,8 +26,8 @@ h6 {
 }
 
 h1 {
-   background: #524500;
-background: linear-gradient(90deg, rgb(45, 49, 0) 0%, rgba(121, 112, 9, 1) 35%, rgba(255, 247, 0, 1) 100%);
+    background: #524500;
+    background: linear-gradient(90deg, rgb(45, 49, 0) 0%, rgba(121, 112, 9, 1) 35%, rgba(255, 247, 0, 1) 100%);
 }
 
 
@@ -113,13 +113,18 @@ dt {
     color: yellow;
 }
 
-.menu {
-    padding-left: 0;
+.nav {
+
+    margin-right: 10px;
 }
 
-.nav {
-    display: inline-block;
-    margin-right: 10px;
+header ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    justify-content: center;
 }
 
 nav {
@@ -137,12 +142,6 @@ header nav {
     padding-right: 20px;
 }
 
-header nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    /* optional: removes bullets */
-}
 
 header nav li {
     display: inline;
@@ -223,39 +222,39 @@ form ul {
 }
 
 .bio {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
 }
 
 .bio .tablediv {
-  grid-column: 1 / -1;
+    grid-column: 1 / -1;
 }
 
 .bio .tablediv table {
-  margin-top: 1em;
-  border-collapse: collapse;
-  width: 100%;
-  text-align: left;
+    margin-top: 1em;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
 }
 
 .bio .tablediv th,
 .bio .tablediv td {
-  border: 1px solid #000;
-  padding: 0.5em;
+    border: 1px solid #000;
+    padding: 0.5em;
 }
 
 .bio .tablediv caption {
-  caption-side: bottom;
-  padding-top: 0.5em;
-  font-style: italic;
+    caption-side: bottom;
+    padding-top: 0.5em;
+    font-style: italic;
 }
 
 img {
     max-width: 100%;
 }
 
-.avatar { 
+.avatar {
     padding: 2%;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -268,4 +267,112 @@ footer {
 
 .btt {
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 55px yellow, 0 0 75px yellow;
+    margin-left: -25px;
+    position: sticky;
+    bottom: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.btt:hover {
+    transform: rotate(45deg);
+}
+
+
+.favourites>label+div {
+    display: none;
+    width: 100%;
+    /* Step 2.13 */
+}
+
+.favourites>input:checked+label+div {
+    display: block;
+}
+
+
+.favourites input[type="radio"] {
+    display: none;
+}
+
+
+.favourites {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.favourites label {
+    order: -1;
+}
+
+
+.favourites label h3 {
+    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.favourites label:hover h3 {
+    color: #353839;
+    border-bottom: 2px solid #ccc;
+}
+
+.favourites>input:checked+label h3 {
+    color: yellow;
+    border-bottom: 3px solid yellow;
+    font-weight: bold;
+}
+
+.favourites label+div {
+    background-color: #1f2122;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery a {
+    transition: transform 0.3s ease;
+}
+
+.gallery a:hover {
+    transform: scale(1.1);
+}
+
+.gallery a.row-span-2 {
+    grid-row: span 2;
+}
+
+.gallery a.col-span-2 {
+    grid-column: span 2;
+}
+
+.bio a {
+    display: block;
+    position: relative;
+}
+
+.paperclip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    background: none;
+    box-shadow: none;
+    z-index: 10;
 }

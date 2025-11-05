@@ -32,13 +32,21 @@
                     <li class="nav"><a href="glossary.html">Glossary</a></li>
                     <li class="nav"><a href="survey.html">Survey</a></li>
                     <li class="nav"><a href="lorem.html">Lorem</a></li>
+                    <li class="nav"><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <h1>Welcome to Francisco's Website!</h1>
             <div class="bio">
-                <img class="avatar" src="public/img/gamer.png" alt="Avatar image"></a>
+                <a href="#">
+                    <div>
+                        <img class="avatar" src="public/img/gamer.png" alt="Avatar image">
+
+                        <img src="public/img/paperclip.png" alt="Paperclip" class="paperclip" />
+                    </div>
+
+                </a>
 
 
                 <p>I am a webdev located in Sault Ste. Marie.</p>
@@ -135,24 +143,55 @@
 
 
             <h2>My favorite things</h2>
-            <a href="https://paramore.net" target="_blank"><img src="public/img/paramore_logo.png"
-                    alt="Paramore Logo"></a>
+            <div class="favourites">
 
-            <h3>Songs</h3>
-            <!-- Found Me! -->
-            <ol>
-                <li>C'est comme ça - Paramore</li>
-                <li>Still into you - Paramore</li>
-                <li>Slide Tackle - Japanese Breakfast</li>
-            </ol>
-            <h3>Haiku</h3>
-            <p>Over the wintry<br> Forest, winds howl in rage<br> With no leaves to blow.<br><cite><span
-                        class="author">by Natsume Sōseki</span></cite></p>
-            <hr>
-            <h3>Video</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jQHU9m90VLU" class="youtube-video"
-                title="YouTube video player" frameborder="0" allowfullscreen>
-            </iframe>
+                <input type="radio" name="fav-tabs" id="tab1" checked>
+                <label for="tab1">
+                    <h3>Artist</h3>
+                </label>
+                <div>
+                    <figure>
+                        <a href="https://paramore.net" target="_blank"><img src="public/img/paramore_logo.png"
+                                alt="Paramore Logo"></a>
+                        <figcaption>Paramore</figcaption>
+                    </figure>
+                </div>
+
+
+                <input type="radio" name="fav-tabs" id="tab2">
+                <label for="tab2">
+                    <h3>Haiku</h3>
+                </label>
+                <div>
+                    <p>Over the wintry<br> Forest, winds howl in rage<br> With no leaves to blow.<br><cite><span
+                                class="author">by Natsume Sōseki</span></cite></p>
+                </div>
+
+
+                <input type="radio" name="fav-tabs" id="tab3">
+                <label for="tab3">
+                    <h3>Songs</h3>
+                </label>
+                <div>
+                    <ol>
+                        <li>C'est comme ça - Paramore</li>
+                        <li>Still into you - Paramore</li>
+                        <li>Slide Tackle - Japanese Breakfast</li>
+                    </ol>
+                </div>
+
+
+                <input type="radio" name="fav-tabs" id="tab4">
+                <label for="tab4">
+                    <h3>Video</h3>
+                </label>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/jQHU9m90VLU"
+                        class="youtube-video" title="YouTube video player" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
         </main>
         <br>
         <footer>
@@ -165,7 +204,7 @@
                 </cite>
             </blockquote>
         </footer>
-        <a href="#top" title="Back to top" class="btt" >&#x21d1;</a>
+        <a href="#top" title="Back to top" class="btt">&#x21d1;</a>
     </div>
 </body>
 
